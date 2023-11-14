@@ -1,9 +1,49 @@
 *{
     padding: 0;
     margin: 0;
-    color: blackgit;
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
-    background-image:url(./Assets/images/exchange\ background.jpg);
+    background-image:url(./Assets/images/top-view-bitcoin-laptop_23-2148285279.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+}
+.parent{
+    background-color: #15f3d5;
+    box-sizing: border-box;
+    width: 400px;
+    height: 450px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: 100px ;
+    margin-top: 100px;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#text-Input{
+    margin-top: 15px;
+    box-sizing:border-box;
+    padding: 10px;
+    width: 350px;
+    color: #15f3d5;
+    border: none;
+  
+}
+#btn{
+    border:none;
+    background-color: blue;
+    color: white;
+    padding: 15px 30px 15px 30px;
+    border-radius: 5px;
+    margin-top: 50px;
     
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: rgb(2, 2, 99);
+    transition: .3s ease-in;
 }

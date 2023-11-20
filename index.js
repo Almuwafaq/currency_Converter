@@ -17,13 +17,13 @@ const DOllARexchange = async () => {
   return dollValue.rates.ZAR;
 };
 const BaseExchange = async () => {
-    const response = await fetch("https://api.frankfurter.app/latest?from=ZAR");
+    const response = await fetch("https://api.frankfurter.app/latest?from=USD");
     const ExtoJAva = await response.json();
     const zarValue = ExtoJAva;
     return zarValue.base;
   };
   const BaseDOllARexchange = async () => {
-    const response = await fetch("https://api.frankfurter.app/latest?from=USD");
+    const response = await fetch("https://api.frankfurter.app/latest?from=ZAR");
     const toJAva = await response.json();
     const dollValue = toJAva;
     return dollValue.base;
@@ -41,7 +41,7 @@ Dollar.addEventListener("click", async () => {
     let Dollbased = await BaseDOllARexchange() 
   let dollarValue = await DOllARexchange();
   btn.addEventListener("click", async () => {
-    h3.textContent = input.value * dollarValue +  Dollbased;
+    h3.textContent = input.value * dollarValue + Dollbased;
     input.value = ""
   });
 });
